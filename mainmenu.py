@@ -3,8 +3,6 @@
 
 from tkinter import Tk, Frame, Button, Label
 from utils.windowmanager import WindowManager
-from game.snakegame import SnakeGame
-from editor.editmap import EditMap
 
 class Menu():
     def __init__(self):
