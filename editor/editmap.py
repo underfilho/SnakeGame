@@ -80,10 +80,10 @@ class EditMap:
         self.end("Novo mapa criado")
 
     def draw_matrix(self):
-        for i in range(1, 25):
-            self.__canvas.create_line(i*10, 0, i*10, 250, fill='grey')
-        for i in range(1, 25):
-            self.__canvas.create_line(0, i*10, 250, i*10, fill='grey')
+        for i in range(1, Config.width):
+            self.__canvas.create_line(i*10, 0, i*10, Config.height, fill='grey')
+        for i in range(1, Config.height):
+            self.__canvas.create_line(0, i*10, Config.width, i*10, fill='grey')
 
     def end(self, message):
         messagebox.showinfo("Saindo do Editor", message)
